@@ -1,12 +1,7 @@
-import React from 'react'
-
-const Hero = ({ children, hero }) => {
+const Hero = ({ children, hero = "defaultHero" }) => {
   return (
-    <><header className={hero}>{children}</header>;</>
-  )
-}
-// Setting defaultProps outside of the functional component
-Hero.defaultProps = {
-    hero: "defaultHero",
-  };
-export default Hero
+    <header className={hero}>{children}</header>
+  );
+};
+
+export default Hero;
