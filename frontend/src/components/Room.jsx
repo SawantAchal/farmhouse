@@ -12,7 +12,7 @@ const Room = ({ room }) => {
         <img src={images[0] || defaultImg} alt="single room" />
         <div className="price-top">
           <h6>Rs.{price}</h6>
-          <p>Per night</p>
+          <p>Per person</p>
         </div>
         <Link to={`/single-room/${slug}`} className="btn-primary room-link">
           Feature
