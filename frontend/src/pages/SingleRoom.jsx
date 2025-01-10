@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import StyledHero from '../components/StyleHero';
 import Banner from '../components/Banner';
 import { useRoomContext } from '../context/context';
+import Contact from '../components/Contact';
 
 const SingleRoom = () => {
   const { slug } = useParams(); 
@@ -35,7 +36,7 @@ const SingleRoom = () => {
       <section className="single-room">
         <div className="single-room-images">
           {defaultImg.map((item, index) => {
-            return <img key={index} src={item} alt={name} />;
+            return <img key={index} src={item} alt={name} className='h-72'/>;
           })}
         </div>
         <div className="single-room-info">
@@ -61,6 +62,7 @@ const SingleRoom = () => {
           })}
         </ul>
       </section>
+      <Contact/>
     </>
   );
 };
