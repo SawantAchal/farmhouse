@@ -1,28 +1,31 @@
 import React, { useState } from 'react';
 import Title from './Title';
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from 'react-icons/fa';
+import { FaShuttleVan} from 'react-icons/fa';
+import { FaSwimmingPool } from "react-icons/fa";
+import { GiKidSlide } from "react-icons/gi";
+import { GiWaterfall } from "react-icons/gi";
 
 const Services = () => {
   const [services] = useState([
     {
-      icon: <FaCocktail />,
-      title: 'Free Cocktail',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      icon: <FaSwimmingPool />,
+      title: 'Refreshing Pool',
+      info: 'Dive into our refreshing pool and unwind with style.',
     },
     {
-      icon: <FaHiking />,
-      title: 'Hiking Trails',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      icon: <GiKidSlide />,
+      title: 'Children’s Playground',
+      info: 'Endless fun for kids with slides and play areas.',
     },
     {
       icon: <FaShuttleVan />,
-      title: 'Free Shuttle',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Free Shuttle Service',
+      info: 'Enjoy hassle-free transportation to and from our farmhouse.',
     },
     {
-      icon: <FaBeer />,
-      title: 'Craft Beer',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      icon: <GiWaterfall />,
+      title: 'Serene Waterfalls',
+      info: 'Relax by the peaceful waterfall and embrace nature’s beauty.',
     },
   ]);
 

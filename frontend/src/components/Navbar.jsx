@@ -15,8 +15,9 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
-          <Link to="/">
-            <img src={logo} alt="beach resort" />
+          <Link to="/" className='font-bold text-sm md:text-lg flex justify-center items-center'>
+            {/* <img src={logo} alt="beach resort" /> */}
+            <p>ASTRO AGRO <span className='text-[#af9a7d]'>FARM STAY</span></p>
           </Link>
           <button type="button" className="nav-btn" onClick={handleToggle}>
             <FaAlignRight className="nav-icon" />
