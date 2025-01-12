@@ -168,6 +168,30 @@ h6 {
   background-image: url("./assets/roombg.jpeg");
   min-height: 60vh;
 }
+
+.slideshow-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: var(--primaryColor);
+}
+
 /* End of Hero */
 /* Banner */
 .banner {
