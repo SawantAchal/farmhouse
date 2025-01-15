@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import StyledHero from '../components/StyleHero';
 import Banner from '../components/Banner';
 import { useRoomContext } from '../context/context';
-import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const SingleRoom = () => {
   const { slug } = useParams(); 
@@ -62,7 +62,7 @@ const SingleRoom = () => {
           })}
         </ul>
       </section>
-      <Contact/>
+      <Footer/>
     </>
   );
 };
