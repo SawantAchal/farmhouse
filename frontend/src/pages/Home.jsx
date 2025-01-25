@@ -4,10 +4,11 @@ import Banner from '../components/Banner'
 import {Link} from 'react-router-dom'
 import Services from '../components/Services'
 import FeaturedRooms from '../components/FeaturedRooms'
-import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import defaultBcg from '../assets/defaultBcg.jpeg'
 import lobby2 from '../assets/lobby2.jpeg'
 import entry from '../assets/entry.jpeg'
+import Map from '../components/Map'
 
 const Home = () => {
   const imageList = [defaultBcg,lobby2, entry ];
@@ -20,7 +21,8 @@ const Home = () => {
       </Hero >
       <Services />
       <FeaturedRooms/>
-      <Contact/>
+      <Map />
+      <Footer/>
     </>
   )
 }
